@@ -1,0 +1,296 @@
+/* start top navbar
+ */
+
+
+#ex-page
+  .inputs
+    .form-oper
+      display: block
+      margin: 0 10px
+      margin-bottom: 30px    
+      &:before , &:after
+        content: ''
+        display：block
+        clear: both
+        overflow: hidden
+      .fgmm
+        display: inline-block 
+        float: left
+        font-weight: normal
+        margin-top: 17px
+        font-size: 16px
+        color: #403f3f
+        text-decoration: none
+      .r-link
+        display: inline-block 
+        float: right
+        font-weight: normal
+        margin-top: 17px
+        display: inline-block
+        font-size: 16px
+        text-decoration: none
+        color: #6d6185
+        
+    .form
+      input
+        padding-left: 35px
+        line-height: 30px
+        font-size: 15px
+        margin-bottom: 12px
+      .labelIcon
+        position: absolute
+        width: 16px
+        height: 16px
+        line-height: 54px
+        text-align: center
+        i
+          display: inline-block
+          font-size: 20px
+          padding: 0 10px
+    .form-submit
+      margin-top: 32px
+
+    .form-send
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      -webkit-align-items: center
+      -ms-flex-align: center
+      align-items: center
+      border: 2px solid #efefef
+      
+      .inputBox
+        position: relative
+        input
+          border-radius: 0
+          margin-bottom: 0
+          border: 0
+      .btn
+        display: inline-block
+        line-height: 50px
+        padding: 0px
+        height: 50px
+        white-space: nowrap
+        cursor: pointer
+        width: 100px
+        color: #fff
+        font-size: 15px
+        position: absolute
+        right: -2px
+        top: -2px
+        border-top-left-radius: inherit
+        border-bottom-left-radius: inherit
+    
+     
+    .form-oper
+      .myChek
+        float: left
+        font-weight: normal
+        margin-top: 4px
+        display: inline-block
+        font-size: 13px
+        text-decoration: none
+        color: #6d6185   
+        input
+          position: relative
+          cursor: pointer
+          width: 20px
+          height: 20px
+          border-radius: 5px
+          border: 0
+          background-color: #fff
+          display: none
+          
+        input + label
+          em
+            padding: 4px
+            border: 1px solid #d9d9d9
+            display: inline-block
+            line-height: 0
+            margin-right: 5px
+            transition: all 0.3s
+            &:before
+              content: ""
+              background-color: #d9d9d9
+              display: inline-block
+              padding: 5px
+           
+        input:checked + label 
+          em
+            border: 1px solid #6F6486
+            &:before
+              content: ""
+              background-color: #6F6486
+        label
+          color: #000
+          letter-spacing: 1px
+          text-transform: capitalize
+          width: 100%
+          cursor: pointer
+          margin-top: 10px
+  .form-inputs
+    display: none   
+  .form-inputs.show
+    display: block
+         
+/*找回密码  
+#ex-page
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0 
+  
+  .wrapper-Center
+    position: relative
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    max-width: 460px
+  .fgpwBox
+    position: absolute
+    top: 49.5%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 440px
+    .fgpw.part1
+      display: none
+    .fgpw.part2
+      display: none
+    .fgpw.part1.show
+      display: block
+    .fgpw.part2.show
+      display: block
+    .fgpw  
+      .form-title
+        padding: 35px 30px 25px
+        margin: 0 10px
+        h4
+          position: relative
+          margin-top: 10px
+          color: #5f5252
+          font-size: 18px
+          i
+            display: inline-block
+            font-size: 24px
+            padding: 0 10px
+            position: absolute
+            width: 16px
+            height: 16px
+            line-height: 16px
+            &:focus,&:hover
+              color: #000
+              text-decoration: none
+              cursor: pointer
+              opacity: .75
+          .close
+            color: #635e5e
+            right: 0
+            top: -2px
+          .back
+            color: #ccc
+            left: -33px
+            top: -25px
+        p
+          margin-top: 12px
+          font-size: 15px
+          color: #666
+          font-weight: normal
+          line-height: 18px
+  .card
+    .inputs  
+      .form-send
+        display: -webkit-flex
+        display: -ms-flexbox
+        display: flex
+        -webkit-align-items: center
+        -ms-flex-align: center
+        align-items: center
+        border: 2px solid #efefef
+        margin-bottom: 12px
+        .yzm
+          display: inline-block
+          
+          .code-img
+            height: 46px
+            width: 110px
+            cursor: pointer
+        .inputBox
+          position: relative
+        input
+          height: 46px
+          font-size: 15px
+        
+          padding: 3px 0 3px 10px
+          border-radius: 0
+          margin-bottom: 0
+          border: 0
+        .btn
+          font-size: 12px
+          //padding-left: 0px
+          //padding-right: 0px
+          width: 60px
+      .form-send
+        opacity: 0
+        transform: scaleX(0)
+        -webkit-transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1)
+        transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1)
+    
+      .form-send.show
+        display: flex
+        -webkit-transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1)
+        transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1)
+        opacity: 1
+        transform: scaleX(1)
+      .form-send.style2
+      
+        .inputBox
+          input
+            padding-left: 35px
+        .btn
+          width: 70px
+      
+  .fgpwBox.show
+    display: block
+  
+  .wrapper-Bg
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(111, 103, 103, 0.2)
+    top: 0
+    left: 0
+    opacity: 0
+    visibility: collapse
+    transition: opacity .5s ease
+    -wekit-transition: opacity .5s ease
+    -o-transition: opacity .5s ease
+    -ms-transition: opacity .5s ease
+    -moz-transition: opacity .5s ease
+    overflow: auto
+  .wrapper-Bg.show
+    opacity: 1
+    visibility: visible
+    transition: opacity .5s ease
+    -wekit-transition: opacity .5s ease
+    -o-transition: opacity .5s ease
+    -ms-transition: opacity .5s ease
+    -moz-transition: opacity .5s ease
+    
+  .registerBox
+    position: absolute
+    top: 49.5%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 440px 
+    
+
+@media (max-width: 480px)
+  #ex-page 
+    .card 
+      .inputs
+        padding: 20px 15px 50px
+    
+    .fgpwBox
+      width: 100%
+      .card
+        margin: 0px

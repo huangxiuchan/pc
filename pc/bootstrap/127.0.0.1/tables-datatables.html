@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="src/img/fav.png">
+  <!-- style -->
+  <link rel="stylesheet" href="src/plug/bootstrap.css">
+  <link rel="stylesheet" href="src/plug/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="src/dist/style/app.css">
+  <!-- titel -->
+  <title>Amun - Responsive Web Application Kit</title>
+</head>
+<body>
+
+  <!-- start top-navbar -->
+  <section id="top-navbar">
+
+    <div class="nav fixed-top">
+      <!-- navbar left -->
+      <div class="nav-left">
+        <a href="index.html" class="brand">Amun</a>
+      </div>
+      <!-- navbar right -->
+      <div class="nav-right">
+        <div class="left">
+          <a id="NavBtn" href="#" class="btn btn-link">
+            <i class="zmdi zmdi-menu"></i>
+          </a>
+          <div class="search input-group">
+            <a href="" class="btn input-group-addon"><i class="zmdi zmdi-search"></i></a>
+            <input type="text" placeholder="search">
+          </div>
+        </div>
+        <div class="right">
+          <div class="user dropdown">
+            <a href="#" class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ms</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#"><i class="zmdi zmdi-account-circle"></i>edit my profile</a>
+              <a class="dropdown-item" href="#"><i class="zmdi zmdi-mall"></i>my balance</a>
+              <a class="dropdown-item" href="#"><i class="zmdi zmdi-email"></i>my inbox</a>
+              <a class="dropdown-item" href="#"><i class="zmdi zmdi-alert-circle"></i>task</a>
+              <a class="dropdown-item" href="#"><i class="zmdi zmdi-comment"></i>chat</a>
+              <div class="divider"></div>
+              <a class="dropdown-item" href="#"><i class="zmdi zmdi-input-power"></i>log out</a>
+            </div>
+          </div>
+          <div class="user message dropdown">
+            <a href="#" class="btn" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-comments"></i><span class="badge">9</span></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <div class="head">
+                <p>message</p>
+                <span class="badge">6 new</span>
+              </div>
+              <div class="contnet">
+                <div class="post">
+                  <div class="img">
+                    <img src="src/img/pro.jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <h1>mohamed said</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="img">
+                    <img src="src/img/205.jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <h1>joun</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="img">
+                    <img src="src/img/201.jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <h1>moza</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="img">
+                    <img src="src/img/202.jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <h1>moza tany</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="img">
+                    <img src="src/img/208.jpg" alt="">
+                  </div>
+                  <div class="text">
+                    <h1>moza</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer">
+                <a href="#" class="btn">read all the message</a>
+              </div>
+            </div>
+          </div>
+          <div class="user notifications dropdown">
+            <a href="#" class="btn" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-notifications"></i><span class="badge">6</span></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+              <div class="head">
+                <p>notifications</p>
+                <span class="badge">6 new</span>
+              </div>
+              <div class="contnet">
+                <div class="post">
+                  <div class="img">
+                    <i class="zmdi zmdi-invert-colors"></i>
+                  </div>
+                  <div class="text">
+                    <h1>You have new order!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="img">
+                    <i class="zmdi zmdi-puzzle-piece"></i>
+                  </div>
+                  <div class="text">
+                    <h1>You have new order!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="img">
+                    <i class="zmdi zmdi-file"></i>
+                  </div>
+                  <div class="text">
+                    <h1>You have new order!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="img">
+                    <i class="zmdi zmdi-invert-colors"></i>
+                  </div>
+                  <div class="text">
+                    <h1>You have new order!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="img">
+                    <i class="zmdi zmdi-puzzle-piece"></i>
+                  </div>
+                  <div class="text">
+                    <h1>You have new order!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="img">
+                    <i class="zmdi zmdi-file"></i>
+                  </div>
+                  <div class="text">
+                    <h1>You have new order!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer">
+                <a href="#" class="btn">read all the notification</a>
+              </div>
+            </div>
+          </div>
+          <div class="user flag dropdown">
+            <a href="#" class="btn" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="src/img/flags/Egypt.png" alt="">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+              <a class="dropdown-item" href="#"><img src="src/img/flags/Egypt.png" alt="flag">arabic</a>
+              <a class="dropdown-item" href="#"><img src="src/img/flags/United-States-of-America.png" alt="flag">english</a>
+              <a class="dropdown-item" href="#"><img src="src/img/flags/Spain.png" alt="flag">spanish</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start page directory -->
+
+  </section>
+  <!-- end top navbar -->
+
+  <!-- strat Layout -->
+
+  <div id="layout"  >
+      <!-- start side bar -->
+    <div id="sidebar"></div>
+      <!-- end side bar -->
+      <!-- start content -->
+      <div id="content">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-head">
+                <div class="left">Powerful Datatables</div>
+                <div class="right">
+                  <i class="zmdi zmdi-chevron-down"></i>
+                  <i class="zmdi zmdi-refresh-sync"></i>
+                  <i class="zmdi zmdi-close-circle-o"></i>
+                </div>
+              </div>
+              <div class="card-body">
+                <table id="bigData" class="display" cellspacing="0" width="100%">
+                  <thead>
+                      <tr>
+                          <th>名称</th>
+                          <th>最短/cm</th>
+                          <th>最长/cm</th>
+                          <th>客单价/元</th>
+                          <th>中文</th>
+                          <th>平方</th>
+                          <th>操作</th>
+                      </tr>
+                  </thead>
+                  <tfoot>
+                      <tr>
+                          <th>名称</th>
+                          <th>最短/cm</th>
+                          <th>最长/cm</th>
+                          <th>客单价/元</th>
+                          <th>中文</th>
+                          <th>平方</th>
+                          <th>操作</th>
+                      </tr>
+                  </tfoot>
+                  <tbody>
+                      <tr>
+                          <td><input type="text" value="铁皮烤漆边"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input id="Chek_0" type="checkbox"></td>
+                          <td><input id="Chek_1" type="checkbox"></td>
+                          <td>
+                          	<div class="row">
+                          		<div class="oper-btn col-2">
+		                        	  <a href="tables-datatables.html" class="modify"><i class="bg-1 zmdi zmdi-wrench" title="修改"></i></a>
+		                        	</div>
+		                        	<div class="oper-btn col-2">
+		                        	  <a class="delete"><i class="bg-2 zmdi zmdi-close" title="删除" data-toggle="modal" data-target="#modal1"></i></a>
+		                        	</div>
+                          	</div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><input type="text" value="铁皮烤漆边"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input id="Chek_0" type="checkbox"></td>
+                          <td><input id="Chek_1" type="checkbox"></td>
+                          <td>
+                          	<div class="row">
+                          		<div class="oper-btn col-2">
+		                        	  <a href="tables-datatables.html" class="modify"><i class="bg-1 zmdi zmdi-wrench" title="修改"></i></a>
+		                        	</div>
+		                        	<div class="oper-btn col-2">
+		                        	  <a class="delete"><i class="bg-2 zmdi zmdi-close" title="删除" data-toggle="modal" data-target="#modal1"></i></a>
+		                        	</div>
+                          	</div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><input type="text" value="铁皮烤漆边"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input id="Chek_0" type="checkbox"></td>
+                          <td><input id="Chek_1" type="checkbox"></td>
+                          <td>
+                          	<div class="row">
+                          		<div class="oper-btn col-2">
+		                        	  <a href="tables-datatables.html" class="modify"><i class="bg-1 zmdi zmdi-wrench" title="修改"></i></a>
+		                        	</div>
+		                        	<div class="oper-btn col-2">
+		                        	  <a class="delete"><i class="bg-2 zmdi zmdi-close" title="删除" data-toggle="modal" data-target="#modal1"></i></a>
+		                        	</div>
+                          	</div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><input type="text" value="铁皮烤漆边"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input id="Chek_0" type="checkbox"></td>
+                          <td><input id="Chek_1" type="checkbox"></td>
+                          <td>
+                          	<div class="row">
+                          		<div class="oper-btn col-2">
+		                        	  <a href="tables-datatables.html" class="modify"><i class="bg-1 zmdi zmdi-wrench" title="修改"></i></a>
+		                        	</div>
+		                        	<div class="oper-btn col-2">
+		                        	  <a class="delete"><i class="bg-2 zmdi zmdi-close" title="删除" data-toggle="modal" data-target="#modal1"></i></a>
+		                        	</div>
+                          	</div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><input type="text" value="铁皮烤漆边"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input id="Chek_0" type="checkbox"></td>
+                          <td><input id="Chek_1" type="checkbox"></td>
+                          <td>
+                          	<div class="row">
+                          		<div class="oper-btn col-2">
+		                        	  <a href="tables-datatables.html" class="modify"><i class="bg-1 zmdi zmdi-wrench" title="修改"></i></a>
+		                        	</div>
+		                        	<div class="oper-btn col-2">
+		                        	  <a class="delete"><i class="bg-2 zmdi zmdi-close" title="删除" data-toggle="modal" data-target="#modal1"></i></a>
+		                        	</div>
+                          	</div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><input type="text" value="铁皮烤漆边"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input id="Chek_0" type="checkbox"></td>
+                          <td><input id="Chek_1" type="checkbox"></td>
+                          <td>
+                          	<div class="row">
+                          		<div class="oper-btn col-2">
+		                        	  <a href="tables-datatables.html" class="modify"><i class="bg-1 zmdi zmdi-wrench" title="修改"></i></a>
+		                        	</div>
+		                        	<div class="oper-btn col-2">
+		                        	  <a class="delete"><i class="bg-2 zmdi zmdi-close" title="删除" data-toggle="modal" data-target="#modal1"></i></a>
+		                        	</div>
+                          	</div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><input type="text" value="铁皮烤漆边"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input type="text" placeholder="请输入"/></td>
+                          <td><input id="Chek_0" type="checkbox"></td>
+                          <td><input id="Chek_1" type="checkbox"></td>
+                          <td>
+                          	<div class="row">
+                          		<div class="oper-btn col-2">
+		                        	  <a href="tables-datatables.html" class="modify"><i class="bg-1 zmdi zmdi-wrench" title="修改"></i></a>
+		                        	</div>
+		                        	<div class="oper-btn col-2">
+		                        	  <a class="delete"><i class="bg-2 zmdi zmdi-close" title="删除" data-toggle="modal" data-target="#modal1"></i></a>
+		                        	</div>
+                          	</div>
+                          </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+  </div>
+
+  <!-- end Layout -->
+
+
+  <!-- script -->
+  <script src="src/plug/jquery.js"></script>
+  <script src="src/plug/tether.js"></script>
+  <script src="src/plug/bootstrap.js"></script>
+  <script src="src/plug/jquery.dataTables.min.js"></script>
+  <script type="text/javascript">
+    $('#bigData').DataTable();
+  </script>
+  <script src="src/dist/js/app.js"></script>
+</body>
+</html>
