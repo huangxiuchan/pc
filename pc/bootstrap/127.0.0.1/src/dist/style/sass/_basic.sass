@@ -1,0 +1,297 @@
+body
+  background-color: rgba(0,0,0,0.03)
+  font-family: 'microsoft yahei',helvetica,arial,sans-serif
+  font-weight: 600
+  color: #fff
+  font-size: 12px
+  line-height: 12px
+  letter-spacing: 1px
+h1,h2,h3,h4,h5,h6,p
+  padding: 0
+  margin: 0
+  text-transform: capitalize
+  font-family:  'microsoft yahei',helvetica,arial,sans-serif
+  font-weight: 600
+  color: #fff
+  font-size: 12px
+  line-height: 12px
+  letter-spacing: 1px
+code , pre
+  font-size: 12px
+  background-color: $color6
+  padding: 4px 8px
+  margin: 0 8px
+  border-radius: 5px
+  font-size: 10px
+  font-weight: 600
+  color: $color4
+hr
+  margin: 45px 0
+input.form-control
+  +font1
+  font-family: 'microsoft yahei',helvetica,arial,sans-serif
+  line-height: 20px 
+  font-size: 14px
+  color: #464a4c
+  text-transform: capitalize
+  transition: all 0.333s
+  &:hover , &:active , &:focus
+    outline: 0
+    border: 2px solid $color1
+
+select.form-control
+ 
+ 
+  width: 100%
+  font-size: 14px
+  text-transform: capitalize
+  transition: all 0.333s
+  
+  &:hover , &:active , &:focus
+    border: 1px solid $color1
+  option
+    border: 1px solid $color1
+p.lead
+  font-size: 14px
+  line-height: 24px
+p.info
+  margin-bottom: 40px
+.h1,.h2,.h3,.h4,.h5,.h6
+  margin-bottom: 20px
+
+/* General
+.btn
+  font-family:  'microsoft yahei',helvetica,arial,sans-serif
+  border: 0
+  color: #fff
+  text-transform: capitalize
+  letter-spacing: 1px
+  &:focus
+    box-shadow: 0 0 0
+    outline: 0
+    color: #fff
+    opacity: 1
+.btn2
+  border-bottom: 2px solid rgba(0 , 0 , 0 , 0.3)
+.btn-b
+  border-radius: 50px
+.btn-link
+  &:hover , &:active
+    box-shadow: 0 0 0
+    outline: 0
+    color: $color1--
+.btn-primary
+  background-color: $color1
+  &:hover , &:active
+    background-color: $color1
+    opacity: .7
+    box-shadow: 0 0 0
+    outline: 0
+    color: #fff
+    -webkit-transition: inherit
+    -o-transition: inherit
+    transition: inherit
+  &:disabled
+    background-color: #dcdcdc
+    border-color: #dcdcdc
+    &:hover , &:active
+      background-color: #dcdcdc
+      border-color: #dcdcdc
+.disabled
+    background-color: #dcdcdc
+    border-color: #dcdcdc
+.btn-secondary
+  background-color: lightgray
+  &:hover , &:active
+    background-color: lightgray
+    color: #fff
+    opacity: .7
+    box-shadow: 0 0 0
+    outline: 0
+.btn-success
+  background-color: lightgreen
+  &:hover , &:active
+    background-color: lightgreen
+    opacity: .7
+    box-shadow: 0 0 0
+    outline: 0
+    color: #fff
+.btn-info
+  background-color: $color2
+  &:hover , &:active
+    background-color: $color2
+    opacity: .7
+    box-shadow: 0 0 0
+    outline: 0
+    color: #fff
+.btn-warning
+  background-color: $color3
+  &:hover , &:active
+    background-color: $color3
+    opacity: .7
+    box-shadow: 0 0 0
+    outline: 0
+    color: #fff
+.btn-danger
+  background-color: $color4
+  &:hover , &:active
+    background-color: $color4
+    opacity: .7
+    box-shadow: 0 0 0
+    outline: 0
+    color: #fff
+.btn-outline-primary
+  color: $color1
+  border: 1px solid $color1
+  &:hover , &:active
+    background-color: $color1
+    border: 1px solid $color1
+    color: #fff
+.btn-outline-danger
+  color: $color4
+  border: 1px solid $color4
+  &:hover , &:active
+    background-color: $color4
+    border: 1px solid $color4
+    color: #fff
+.btn-outline-success
+  color: lightgreen
+  border: 1px solid lightgreen
+  &:hover , &:active
+    background-color: lightgreen
+    border: 1px solid lightgreen
+    color: #fff
+.btn-outline-info
+  color: $color2
+  border: 1px solid $color2
+  &:hover , &:active
+    background-color: $color2
+    border: 1px solid $color2
+    color: #fff
+.btn-outline-warning
+  color: $color3
+  border: 1px solid $color3
+  &:hover , &:active
+    background-color: $color3
+    border: 1px solid $color3
+    color: #fff
+.btn-outline-secondary
+  color: $color6--
+  border: 1px solid $color6--
+  &:hover , &:active
+    background-color: $color6--
+    border: 1px solid $color6--
+    color: #fff
+
+/* Models
+.modal-content
+  // width: 700px
+  border: 0
+  border-radius: 3px
+  text-align: center
+  padding: 80px 20px
+  .zmdi-modal
+    font-size: 70px
+    color: $color1
+  h1
+    color: $color5
+    font-size: 24px
+    padding: 30px 0
+  p
+    +font1
+    font-size: 10px
+    line-height: 20px
+    font-weight: 300
+    padding: 0 20px 30px 20px
+    color: $color5
+  .btn
+    padding: 10px 40px
+    &:last-child
+      margin-left: 30px
+// badge
+.badge-primary , .badge
+  background-color: $color1
+  padding: 1px 10px
+  border-radius: 5px
+  +font1
+  font-weight: 300
+  font-size: 10px
+.badge-default
+  background-color: $color5
+.badge-warning
+  background-color: $color4
+.badge-info
+  background-color: $color2
+.badge-danger
+  background-color: $color3
+#modal-header
+  .modal-header
+    margin-bottom: 50px
+    padding-left: 0
+    padding-right: 0
+    h5
+      color: $color5
+  .modal-content
+    padding-top: 0
+#bigData
+  +font1
+  color: $color5
+
+// start default bg
+.bg-primary
+  background-color: $color1
+.bg-info
+  background-color: $color2
+.bg-warning
+  background-color: $color3
+.bg-danger
+  background-color: $color4
+.bg-black
+  background-color: $color5 !important
+.b-0
+  border: 0 !important
+  box-shadow: 0 0 0 !important
+  border-radius: 0 !important
+// end default bg
+// charts
+.ct-labels
+  opacity: 0.4
+.ct-grid
+  stroke: rgba(0,0,0,0.06)
+  stroke-dasharray: none
+.ct-series-a
+  .ct-bar
+    stroke: $color1
+    stroke-width: 16px !important
+    opacity: 0.8
+    &:hover
+      opacity: 1
+.ct-series-b
+  .ct-bar
+    stroke: $color2
+    stroke-width: 16px !important
+    opacity: 0.8
+    &:hover
+      opacity: 1
+.ct-series-c
+  .ct-bar
+    stroke: $color3
+    stroke-width: 16px !important
+    opacity: 0.8
+    &:hover
+      opacity: 1
+
+// start scrolbar
+.row
+  margin-left: -10px
+  margin-right: -15px
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9,
+.col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, 
+.col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8,
+.col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl
+  padding-left: 10px
+  padding-right: 10px
+
+
+.hide
+  display: none
