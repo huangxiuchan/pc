@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="src/img/fav.png">
+  <!-- style -->
+  <link rel="stylesheet" href="src/plug/bootstrap.css">
+  <link rel="stylesheet" href="src/dist/style/app.css">
+  <!-- titel -->
+  <title>Amun - Responsive Web Application Kit</title>
+</head>
+<body>
+
+  <!-- strat Layout -->
+  <div id="ex-page" class="login-page ">
+    
+    
+    <div class="wrapper-Center col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <!-- text -->
+            <div class="text">
+              <a class="imgbox" href="./"><img src="src/img/icon/logo.png" /></a>
+            </div>
+            
+            <!--login-->
+            <form data-toggle="validator" role="form">
+	            <div class="inputs form-inputs log show">
+	              <div class="form form-row">
+	              	<div class="labelIcon"><i class="zmdi zmdi-account"></i></div>
+	                <input placeholder="输入您的邮箱/手机号码" name="phone" type="text" max-length="64" class="form-control">
+	                
+	              </div>
+	              <div class="form form-row">
+	              	<div class="labelIcon"><i class="zmdi zmdi-key"></i></div>
+	                <input placeholder="输入密码" name="password" type="password" class="form-control">
+	              </div>
+	              <div class="form form-submit">
+	                <button type="button" class="btn btn-primary" onclick="checkForm(this)" >登录</button>
+	              </div>
+	              <div class="form-oper">
+	              	<a href="#" class="fgmm ">忘记密码</a>
+	              	<a href="#" class="r-link register">我要注册</a>
+	              </div>
+	            </div>
+	          </form>
+	          <!--login end-->
+            
+            <!--register-->
+            <form data-toggle="validator" role="form">
+	            <div class="inputs form-inputs reg">
+	              <div class="form form-row">
+	              	<div class="labelIcon"><i class="zmdi zmdi-account"></i></div>
+	                <input placeholder="输入您的邮箱" name="email" type="text" max-length="64" class="form-control"> 
+	              </div>
+	              <div class="form form-row">
+	              	<div class="labelIcon"><i class="zmdi zmdi-key"></i></div>
+	                <input placeholder="设置密码（8~16位字母或数字）" name="password" type="password" class="form-control">
+	              </div>
+	              <div class="form form-row">
+	              	<div class="labelIcon"><i class="zmdi zmdi-account"></i></div>
+	                <input placeholder="输入您的手机号码" name="phone" type="text" max-length="64" class="form-control">
+	                
+	              </div>
+	              
+	              
+	              <div class="form form-row form-send style2 show">
+	                <div class="inputBox">
+	                  <div class="labelIcon"><i class="zmdi zmdi-collection-text"></i></div>
+	                	<input placeholder="输入手机验证码" name="yzm_dx" type="text"  class="form-control">
+	                </div>
+	                <button type="button" class="btn btn-primary" onclick="registerGetma(this)">获取验证码</button>
+	              </div>
+	              
+	              <div class="form form-row form-send style1">
+					          	<div class="yzm">
+					          		<img slot="prepend" src="src/img/icon/ma.jpg" alt="图形验证码" class="code-img">
+					          	</div>
+			                <div class="inputBox">
+			                	<input placeholder="输入验证码" name="yzm_tx" type="text"  class="form-control">
+			                </div>
+			                <a class="btn btn-primary" onclick="registerSend(this)">发送</a>
+			              </div>
+			              
+	              
+	              <div class="form form-submit">
+	                <button type="button" class="btn btn-primary" onclick="checkRegister(this)">注册</button>
+	              </div>
+	              <div class="form-oper">
+	              	<div class="myChek">
+					            <input id="Chek_0" type="checkbox" checked onchange="changeCheck(this)">
+					            <label id="labelChek_0" for="Chek_0">
+					            	<em></em>
+					            	<span>同意使用</span>
+					            	<a target="_blank" href="#" class="service-protocol">服务协议</a>
+					            </label>
+					        </div>
+	              	<a href="#" class="r-link login">我要登录</a>
+	              </div>
+	            </div>
+	          </form>
+	          <!--register end-->
+          </div>
+        </div>
+    </div>
+    
+    
+    <div class="wrapper-Bg">
+    	<!--忘记密码-->
+	    <div class="fgpwBox ">
+	    	<div class="card">
+	    		<div class="card-body">
+	    			 <!--forget password1-->
+		          
+	      		 <form class="fgpw part1" data-toggle="validator" role="form" >
+							  	<div class="form-title">
+							  		<h4>找回密码
+						      		<i class="close  zmdi zmdi-close"></i>
+						          <!--<i class="back zmdi zmdi-arrow-left"></i>-->
+						      	</h4>
+							      <p>请输入您的邮箱或手机号，以进行密码重设</p>
+					
+					      	</div>
+					        <div class="inputs">
+					          <div class="form form-row">
+					          	<div class="labelIcon"><i class="zmdi zmdi-account"></i></div>
+			                <input placeholder="输入您的邮箱/手机号码" name="phone" type="text" max-length="64" class="form-control"> 
+			              </div>
+	              
+			              <div class="form form-submit">
+			                <button type="button"  class="btn btn-primary" onclick="getMa(this)">获取验证码</a>
+			              </div>
+			              
+			            </div>
+	          </form>
+	      	
+	          <!--end-->
+	          
+	          <!--forget password2-->
+		          
+	      		 <form class="fgpw part2" data-toggle="validator" role="form">
+							  	<div class="form-title">
+							  		<h4>设置您的新密码
+						      		<i class="close  zmdi zmdi-close"></i>
+						          <i class="back zmdi zmdi-arrow-left"></i>
+						      	</h4>
+	
+					      	</div>
+					        <div class="inputs">
+					          <div class="form form-row">
+					          	<div class="labelIcon"><i class="zmdi zmdi-lock"></i></div>
+			                <input placeholder="设置新密码（8~16位字母、数字）" name="newpassword" type="text" max-length="64" class="form-control"> 
+			              </div>
+			              
+	                  <div class="form form-row form-send style1">
+					          	<div class="yzm">
+					          		<img slot="prepend" src="src/img/icon/ma.jpg" alt="图形验证码" class="code-img">
+					          	</div>
+			                <div class="inputBox">
+			                	<input placeholder="输入验证码" name="yzm_tx" type="text"  class="form-control">
+			                </div>
+			                <a class="btn btn-primary" onclick="setCheck(this)">发送</a>
+			              </div>
+			              
+			              <div class="form form-row form-send style2">
+			              	
+			                <div class="inputBox">
+			                	<div class="labelIcon"><i class="zmdi zmdi-collection-text"></i></div>
+			                	<input placeholder="输入手机收到的验证码" name="yzm_dx" type="text" class="form-control">
+			                </div>
+			                <a class="btn btn-primary" >重新发送</a>
+			              </div>
+			              
+			              <div class="form form-submit">
+			                <button  type="button" class="btn btn-primary" disabled="disabled" onclick="setOk(this)">确认</button>
+			              </div>
+			              
+			            </div>
+	          </form>
+	          <!--end-->
+		     </div>
+	      </div>  
+      </div>
+      <!--忘记密码end-->
+      
+   
+    </div>  
+  </div>
+  <!-- end Layout -->
+  
+  
+
+  <!-- script -->
+  <script src="src/plug/jquery.js"></script>
+  <script src="src/plug/tether.js"></script>
+  <script src="src/plug/bootstrap.js"></script>
+  <script src="src/dist/js/app.js"></script>
+  <script src="src/dist/js/login.js"></script>
+</body>
+</html>

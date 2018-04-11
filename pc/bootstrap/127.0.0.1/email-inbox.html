@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="src/img/fav.png">
+  <!-- style -->
+  <link rel="stylesheet" href="src/plug/bootstrap.css">
+  <link rel="stylesheet" href="src/dist/style/app.css">
+  <!-- titel -->
+  <title>Amun - Responsive Web Application Kit</title>
+</head>
+<body>
+
+  <!-- 顶部导航栏 -->
+	<section id="top-navbar">
+
+			<div class="nav fixed-top">
+				<!-- 网站LOGO -->
+				<div class="nav-left invers">
+					<a href="index.html" class="brand">Amun</a>
+				</div>
+				<!-- 搜索栏 -->
+				<div class="nav-right">
+					<div class="left">
+						<a id="NavBtn" href="#" class="btn btn-link">
+							<i class="zmdi zmdi-menu"></i>
+						</a>
+						<div class="search input-group">
+							<a href="" class="btn input-group-addon"><i class="zmdi zmdi-search"></i></a>
+							<input type="text" placeholder="搜索订单">
+						</div>
+					</div>
+					<!-- 搜索栏结束 -->
+					<div class="right">
+						<!-- 功能菜单开始 -->
+						<div class="user dropdown">
+							<a href="#" class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="src/img/001.jpg">
+							</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#"><i class="zmdi zmdi-account-circle"></i>个人中心</a>
+								<a class="dropdown-item" href="#"><i class="zmdi zmdi-mall"></i>应用商城</a>
+								<a class="dropdown-item" href="#"><i class="zmdi zmdi-email"></i>信息中心</a>
+								<a class="dropdown-item" href="#"><i class="zmdi zmdi-alert-circle"></i>帮助中心</a>
+								<a class="dropdown-item" href="#"><i class="zmdi zmdi-comment"></i>联系客服</a>
+								<div class="divider"></div>
+								<a class="dropdown-item" href="#"><i class="zmdi zmdi-input-power"></i>退出账户</a>
+							</div>
+						</div>
+						<!-- 功能菜单结束 -->
+						<!-- 信息面板开始 -->
+						<div class="user message dropdown">
+							<a href="#" class="btn" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-comments"></i><span class="badge">2</span></a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								<div class="head">
+									<p>信息</p>
+									<span class="badge">2 new</span>
+								</div>
+								<div class="contnet">
+									<div class="post">
+										<div class="img">
+											<img src="src/img/pro.jpg" alt="">
+										</div>
+										<div class="text">
+											<h1>mohamed said</h1>
+											<p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+										</div>
+									</div>
+									<div class="post">
+										<div class="img">
+											<img src="src/img/205.jpg" alt="">
+										</div>
+										<div class="text">
+											<h1>joun</h1>
+											<p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="footer">
+									<a href="#" class="btn">全部设为已读</a>
+								</div>
+							</div>
+						</div>
+						<!-- 信息面板结束 -->
+						<!-- 通知面板开始 -->
+						<div class="user notifications dropdown">
+							<a href="#" class="btn" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-notifications"></i><span class="badge">2</span></a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+								<div class="head">
+									<p>通知</p>
+									<span class="badge">2 new</span>
+								</div>
+								<div class="contnet">
+									<div class="post">
+										<div class="img">
+											<i class="zmdi zmdi-invert-colors"></i>
+										</div>
+										<div class="text">
+											<h1>You have new order!</h1>
+											<p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+										</div>
+									</div>
+									<div class="post">
+										<div class="img">
+											<i class="zmdi zmdi-puzzle-piece"></i>
+										</div>
+										<div class="text">
+											<h1>You have new order!</h1>
+											<p>Lorem ipsum dolor sit amet, consectetuer elit. 30 minutes ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="footer">
+									<a href="#" class="btn">清空通知栏</a>
+								</div>
+							</div>
+						</div>
+						<!-- 通知面板结束 -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 顶部导航栏结束 -->
+
+  <!-- strat Layout -->
+
+  <div id="layout"  >
+      <!-- start side bar -->
+      <div id="sidebar"></div>
+      <!-- end side bar -->
+      <!-- start content -->
+      <div id="content">
+        <div id="myinbox">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                	
+                  <!-- start head -->
+                  <div class="top left">
+                  	<div class="row">
+                      <div class="col-lg-12">
+		                    <div class="oper-add-btn ">
+		                        <a href="#" class="btn btn-primary"><i class="zmdi zmdi-plus"></i>本地报价</a>
+		                        
+		                        <a href="#" class="btn btn-primary"><i class="zmdi zmdi-plus"></i>网络报价</a>
+		                    </div>
+		                  </div>
+		                </div>
+                  </div>
+                  <!-- end head -->
+                  
+                  
+                  <!--start body-->
+                  <div class="bottom">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="right">
+                          <div class="wrapper">
+                            
+                            <!-- 内容start -->
+                            <div class="bottom">
+                            	
+                              <div id="f1" class="email">
+                                <div class="row">
+                                  <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                                    <div class="img"><img src="src/img/209.jpg" alt=""></div>
+                                  </div>
+                                  <div class="col-lg-7 col-md-7 col-sm-6 col-10">
+                                    <div class="text">
+                                      <h1>发光字</h1>
+                                      <p>广州拾月字工厂</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-5 ">
+                                  
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                    	  <div class="oper-btn">
+                                    	  	<a  class="setNormal"><i class="bg-3">设为默认</i></a>
+	                                    	  <a href="tables-datatables.html" class="modify"><i class="bg-1">编辑</i></a>
+	                                    	  <a class="delete"><i class="bg-2"  data-toggle="modal" data-target="#modal1">删除</i></a>
+	                                    	</div>
+	                                    </div>
+	                                    
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="f2" class="email">
+                                <div class="row">
+                                  <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                                    <div class="img"><img src="src/img/209.jpg" alt=""></div>
+                                  </div>
+                                  <div class="col-lg-7 col-md-7 col-sm-6 col-10">
+                                    <div class="text">
+                                      <h1>发光字</h1>
+                                      <p>广州拾月字工厂</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-5 ">
+                                  
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                    	  <div class="oper-btn">
+                                    	  	<a  class="setNormal"><i class="bg-3">设为默认</i></a>
+	                                    	  <a href="tables-datatables.html" class="modify"><i class="bg-1">编辑</i></a>
+	                                    	  <a class="delete"><i class="bg-2 " data-toggle="modal" data-target="#modal2">删除</i></a>
+	                                    	</div>
+	                                    </div>
+	                                    
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="f3" class="email">
+                                <div class="row">
+                                  <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                                    <div class="img"><img src="src/img/209.jpg" alt=""></div>
+                                  </div>
+                                  <div class="col-lg-7 col-md-7 col-sm-6 col-10">
+                                    <div class="text">
+                                      <h1>发光字</h1>
+                                      <p>广州拾月字工厂</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-5 ">
+                                  
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                    	  <div class="oper-btn">
+                                    	  	<a  class="setNormal"><i class="bg-3">设为默认</i></a>
+	                                    	  <a href="tables-datatables.html" class="modify"><i class="bg-1">编辑</i></a>
+	                                    	  <a class="delete"><i class="bg-2"  data-toggle="modal" data-target="#modal3">删除</i></a>
+	                                    	</div>
+	                                    </div>
+	                                    
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div  id="m1" class="email ">
+                                <div class="row">
+                                  <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                                    <div class="img"><img src="src/img/209.jpg" alt=""></div>
+                                  </div>
+                                  <div class="col-lg-7 col-md-7 col-sm-6 col-10">
+                                    <div class="text">
+                                      <h1>迷你字</h1>
+                                      <p>广州拾月字工厂</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-5 ">
+                                  
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                    	  <div class="oper-btn">
+                                    	  	<!--<a  class="beNormal"><i class="bg-4">取消默认</i></a>-->
+                                    	  	<a  class="setNormal"><i class="bg-3">设为默认</i></a>
+	                                    	  <a href="tables-datatables.html" class="modify"><i class="bg-1">编辑</i></a>
+	                                    	  <a class="delete"><i class="bg-2"  data-toggle="modal" data-target="#modal4">删除</i></a>
+	                                    	</div>
+	                                    </div>
+	                                    
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="m2" class="email">
+                                <div class="row">
+                                  <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                                    <div class="img"><img src="src/img/209.jpg" alt=""></div>
+                                  </div>
+                                  <div class="col-lg-7 col-md-7 col-sm-6 col-10">
+                                    <div class="text">
+                                      <h1>迷你字</h1>
+                                      <p>广州拾月字工厂</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-5 ">
+                                  
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                    	  <div class="oper-btn">
+                                    	  	<a  class="setNormal"><i class="bg-3">设为默认</i></a>
+	                                    	  <a href="tables-datatables.html" class="modify"><i class="bg-1">编辑</i></a>
+	                                    	  <a class="delete"><i class="bg-2"  data-toggle="modal" data-target="#modal5">删除</i></a>
+	                                    	</div>
+	                                    </div>
+	                                    
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="m3" class="email">
+                                <div class="row">
+                                  <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                                    <div class="img"><img src="src/img/209.jpg" alt=""></div>
+                                  </div>
+                                  <div class="col-lg-7 col-md-7 col-sm-6 col-10">
+                                    <div class="text">
+                                      <h1>迷你字</h1>
+                                      <p>广州拾月字工厂</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-5 ">
+                                  
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                    	  <div class="oper-btn">
+                                    	  	<a  class="setNormal"><i class="bg-3">设为默认</i></a>
+	                                    	  <a href="tables-datatables.html" class="modify"><i class="bg-1">编辑</i></a>
+	                                    	  <a class="delete"><i class="bg-2 " data-toggle="modal" data-target="#modal6">删除</i></a>
+	                                    	</div>
+	                                    </div>
+	                                    
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="m4" class="email">
+                                <div class="row">
+                                  <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                                    <div class="img"><img src="src/img/209.jpg" alt=""></div>
+                                  </div>
+                                  <div class="col-lg-7 col-md-7 col-sm-6 col-10">
+                                    <div class="text">
+                                      <h1>迷你字</h1>
+                                      <p>广州拾月字工厂</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-5 ">
+                                  
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                    	  <div class="oper-btn">
+                                    	  	<a  class="setNormal"><i class="bg-3">设为默认</i></a>
+	                                    	  <a href="tables-datatables.html" class="modify"><i class="bg-1">编辑</i></a>
+	                                    	  <a class="delete"><i class="bg-2"  data-toggle="modal" data-target="#modal7">删除</i></a>
+	                                    	</div>
+	                                    </div>
+	                                    
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="m5" class="email">
+                                <div class="row">
+                                  <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                                    <div class="img"><img src="src/img/209.jpg" alt=""></div>
+                                  </div>
+                                  <div class="col-lg-7 col-md-7 col-sm-6 col-10">
+                                    <div class="text">
+                                      <h1>迷你字</h1>
+                                      <p>广州拾月字工厂</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-5 ">
+                                  
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                    	  <div class="oper-btn">
+                                    	  	<a  class="setNormal"><i class="bg-3">设为默认</i></a>
+	                                    	  <a href="tables-datatables.html" class="modify"><i class="bg-1">编辑</i></a>
+	                                    	  <a class="delete"><i class="bg-2"  data-toggle="modal" data-target="#modal8">删除</i></a>
+	                                    	</div>
+	                                    </div>
+	                                    
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div id="m6" class="email">
+                                <div class="row">
+                                  <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                                    <div class="img"><img src="src/img/209.jpg" alt=""></div>
+                                  </div>
+                                  <div class="col-lg-7 col-md-7 col-sm-6 col-10">
+                                    <div class="text">
+                                      <h1>迷你字</h1>
+                                      <p>广州拾月字工厂</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-5 ">
+                                  
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                    	  <div class="oper-btn">
+                                    	  	<a  class="setNormal"><i class="bg-3">设为默认</i></a>
+	                                    	  <a href="tables-datatables.html" class="modify"><i class="bg-1">编辑</i></a>
+	                                    	  <a class="delete"><i class="bg-2 " data-toggle="modal" data-target="#modal9">删除</i></a>
+	                                    	</div>
+	                                    </div>
+	                                    
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div id="m7" class="email">
+                                <div class="row">
+                                  <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                                    <div class="img"><img src="src/img/209.jpg" alt=""></div>
+                                  </div>
+                                  <div class="col-lg-7 col-md-7 col-sm-6 col-10">
+                                    <div class="text">
+                                      <h1>发光字</h1>
+                                      <p>广州拾月字工厂</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-5 ">
+                                  
+                                    <div class="row">
+                                      <div class="col-lg-12">
+                                    	  <div class="oper-btn">
+                                    	  	<a  class="setNormal"><i class="bg-3">设为默认</i></a>
+	                                    	  <a href="tables-datatables.html" class="modify"><i class="bg-1">编辑</i></a>
+	                                    	  <a class="delete"><i class="bg-2 " data-toggle="modal" data-target="#modal10">删除</i></a>
+	                                    	</div>
+	                                    </div>
+	                                    
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <!---->
+                          </div>
+                          
+                        </div>
+                        <!--内容-->
+                      </div>
+                      
+                      <!--page start-->
+                      <div id="pages" class="PageBox">
+					                <span class="page clearfix"> 
+					                	<a href="/Index/news/c/n/p/2.html">上一页</a> 
+					                	<a href="/Index/news/c/n/p/1.html">1</a>
+					                	<a href="/Index/news/c/n/p/2.html">2</a>
+					                	<span class="current">3</span>
+					                	<a href="/Index/news/c/n/p/4.html">4</a>
+					                	<a href="/Index/news/c/n/p/5.html">5</a> 
+					                	<a href="/Index/news/c/n/p/4.html">下一页</a>   
+					                	
+					                </span>
+					
+					            </div>
+                      <!--page end-->
+                      
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+                <!--body end-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+  </div>
+
+  <!-- end Layout -->
+
+
+  <!-- script -->
+  <script src="src/plug/jquery.js"></script>
+  <script src="src/plug/tether.js"></script>
+  <script src="src/plug/bootstrap.js"></script>
+  <script src="src/dist/js/app.js"></script>
+</body>
+</html>
